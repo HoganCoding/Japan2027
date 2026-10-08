@@ -1,0 +1,1455 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nhật Bản 2027 – Phương án C</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf7f2;--paper:#ffffff;--ink:#1f2328;--muted:#5d6670;--line:#e6e0d6;--accent:#b23a2e;--accent2:#1f4e79;--chip:#f3ece2;--opt:#7a5c00;--optbg:#fff4cc}
+@media (prefers-color-scheme: dark){:root{--bg:#15171a;--paper:#1d2024;--ink:#e8e6e3;--muted:#a3a9b0;--line:#33383e;--accent:#e06c5e;--accent2:#7fb0e0;--chip:#2a2e33;--opt:#ffd866;--optbg:#3a3220}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Be Vietnam Pro",-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+header.hero{background:linear-gradient(135deg,#b23a2e,#7a1f17);color:#fff;padding:48px 20px 40px}
+header.hero .wrap{max-width:960px;margin:0 auto}
+header.hero h1{margin:0 0 6px;font-size:34px;letter-spacing:.2px}
+header.hero p{margin:0;opacity:.9;font-size:17px}
+nav.toc{max-width:960px;margin:-18px auto 0;padding:0 16px}
+nav.toc .box{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 16px;display:flex;flex-wrap:wrap;gap:6px 10px;box-shadow:0 4px 18px rgba(0,0,0,.06)}
+nav.toc a{color:var(--accent2);text-decoration:none;font-size:14px;background:var(--chip);padding:3px 10px;border-radius:999px}
+main{max-width:960px;margin:0 auto;padding:16px 16px 60px}
+h2{font-size:26px;margin:44px 0 12px;padding-bottom:6px;border-bottom:3px solid var(--accent)}
+h3{font-size:21px;margin:40px 0 10px;color:var(--accent2)}
+h4{font-size:16px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin:24px 0 10px}
+a{color:var(--accent2)}
+table{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:10px 0 16px;font-size:15px}
+th{background:var(--chip);text-align:left;padding:8px 10px;font-weight:600}
+td{padding:8px 10px;border-top:1px solid var(--line);vertical-align:top}
+td:first-child{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--muted)}
+td:last-child{white-space:nowrap}
+.tblwrap{overflow-x:auto}
+strong.opt{color:var(--opt);background:var(--optbg);padding:0 4px;border-radius:4px;font-weight:600}
+.places{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin:8px 0 18px}
+.place{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.place .ph{aspect-ratio:16/10;background:var(--chip);position:relative;overflow:hidden}
+.place .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.place .ph .cr{position:absolute;right:6px;bottom:6px;font-size:11px;background:rgba(0,0,0,.55);color:#fff;padding:1px 6px;border-radius:6px;text-decoration:none}
+.place .ph .ph-empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}
+.place .tx{padding:12px 14px 14px}
+.place .tx p{margin:0 0 8px;font-size:15px}
+.place .tx p:first-child{font-size:16.5px}
+.place .tx p:last-child{margin-bottom:0;color:var(--muted);font-size:13.5px}
+.place .tx ul{margin:0 0 8px;padding-left:18px;font-size:14.5px}
+blockquote,em{color:inherit}
+p > em:only-child{display:block;background:var(--chip);border-left:4px solid var(--accent);padding:8px 12px;border-radius:6px;font-style:normal}
+ul{padding-left:22px}
+footer{max-width:960px;margin:0 auto;padding:0 16px 40px;color:var(--muted);font-size:13px}
+@media print{header.hero{background:#b23a2e !important;-webkit-print-color-adjust:exact;print-color-adjust:exact} nav.toc{display:none} .place{break-inside:avoid} h3{break-before:page}}
+@media (max-width:600px){header.hero h1{font-size:26px} td:last-child{white-space:normal}}
+</style></head>
+<body>
+<header class="hero"><div class="wrap"><h1>Nhật Bản 29/5 – 8/6/2027</h1><p>Phương án C: Tokyo, Kyoto, Osaka, Himeji và núi Phú Sĩ đi về trong ngày</p></div></header>
+<nav class="toc"><div class="box"><a href="#ngày-1-thứ-7-295-đến-tokyo">Ngày 1 — Thứ 7, 29/5</a><a href="#ngày-2-chủ-nhật-305-meiji-jingu-shibuya-teamlab">Ngày 2 — Chủ nhật, 30/5</a><a href="#ngày-3-thứ-2-315-tsukiji-asakusa-akihabara">Ngày 3 — Thứ 2, 31/5</a><a href="#ngày-4-thứ-3-16-tokyo-kyoto">Ngày 4 — Thứ 3, 1/6</a><a href="#ngày-5-thứ-4-26-fushimi-inari-nanzen-ji-triết-lộ-ginkaku-ji">Ngày 5 — Thứ 4, 2/6</a><a href="#ngày-6-thứ-5-36-arashiyama-kinkaku-ji">Ngày 6 — Thứ 5, 3/6</a><a href="#ngày-7-thứ-6-46-universal-studios-japan">Ngày 7 — Thứ 6, 4/6</a><a href="#ngày-8-thứ-7-56-nara-và-osaka">Ngày 8 — Thứ 7, 5/6</a><a href="#ngày-9-chủ-nhật-66-lâu-đài-himeji-tokyo">Ngày 9 — Chủ nhật, 6/6</a><a href="#ngày-10-thứ-2-76-núi-phú-sĩ-đi-về-trong-ngày">Ngày 10 — Thứ 2, 7/6</a><a href="#ngày-bay-thứ-3-86-bay-1030-từ-hnd">Ngày bay — Thứ 3, 8/6 (bay 10</a></div></nav>
+<main><h2 id="tóm-tắt">Tóm tắt</h2>
+<ul>
+<li><strong>10 đêm, 4 người</strong> (2 vợ chồng 51 tuổi, 2 con trai 25 và 15 tuổi).</li>
+<li><strong>Bay đến:</strong> Haneda (HND) 15:30 thứ 7, 29/5. <strong>Bay về:</strong> Haneda 10:30 thứ 3, 8/6.</li>
+<li><strong>Tuyến:</strong> Tokyo (3 đêm) → Kyoto (3 đêm) → Osaka (2 đêm) → Tokyo/Shinagawa (2 đêm).</li>
+<li><strong>Điểm nhấn:</strong> Shibuya, teamLab, Asakusa, Fushimi Inari, Kiyomizu, Arashiyama, Kinkaku-ji, Universal Studios Japan, Nara, lâu đài Himeji, núi Phú Sĩ.</li>
+<li><strong>Ngân sách:</strong> khoảng ¥1,046,000–1,460,000 ($6,970–9,730) cho 4 người, chưa gồm vé máy bay.</li>
+<li><strong>Ngày Phú Sĩ linh hoạt:</strong> đi 31/5 hoặc 7/6, chọn ngày dự báo đẹp hơn. Trời xấu cả hai ngày thì đi Kamakura hoặc ở lại Tokyo.</li>
+</ul>
+<p>Mọi giá là ước tính theo giá 2026, tổng cho 4 người, quy đổi ¥150 = $1. Giờ mở cửa có thể thay đổi, nên kiểm tra lại trước khi đi. <strong class="opt">Tuỳ chọn</strong> = có thể bỏ nếu mệt.</p>
+<h2 id="tổng-quan-lịch-trình">Tổng quan lịch trình</h2>
+<div class="tblwrap"><table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ngày</th>
+<th>Thứ</th>
+<th>Ngủ tại</th>
+<th>Nội dung chính</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>29/5</td>
+<td>Thứ 7</td>
+<td>Shinjuku</td>
+<td>Đáp HND 15:30, về Shinjuku</td>
+</tr>
+<tr class="even">
+<td>30/5</td>
+<td>CN</td>
+<td>Shinjuku</td>
+<td>Meiji Jingu, Harajuku, Shibuya, teamLab, Shibuya Sky</td>
+</tr>
+<tr class="odd">
+<td>31/5</td>
+<td>Thứ 2</td>
+<td>Shinjuku</td>
+<td>Tsukiji, Asakusa, Akihabara (hoặc đổi thành ngày Phú Sĩ)</td>
+</tr>
+<tr class="even">
+<td>1/6</td>
+<td>Thứ 3</td>
+<td>Kyoto</td>
+<td>Shinkansen đi Kyoto, Nishiki, Kiyomizu, Gion</td>
+</tr>
+<tr class="odd">
+<td>2/6</td>
+<td>Thứ 4</td>
+<td>Kyoto</td>
+<td>Fushimi Inari, Nanzen-ji, Triết lộ, Ginkaku-ji</td>
+</tr>
+<tr class="even">
+<td>3/6</td>
+<td>Thứ 5</td>
+<td>Kyoto</td>
+<td>Arashiyama, Kinkaku-ji</td>
+</tr>
+<tr class="odd">
+<td>4/6</td>
+<td>Thứ 6</td>
+<td>Osaka</td>
+<td>Universal Studios Japan</td>
+</tr>
+<tr class="even">
+<td>5/6</td>
+<td>Thứ 7</td>
+<td>Osaka</td>
+<td>Nara buổi sáng, Dotonbori buổi tối</td>
+</tr>
+<tr class="odd">
+<td>6/6</td>
+<td>CN</td>
+<td>Shinagawa</td>
+<td>Lâu đài Himeji, Shinkansen về Tokyo</td>
+</tr>
+<tr class="even">
+<td>7/6</td>
+<td>Thứ 2</td>
+<td>Shinagawa</td>
+<td>Núi Phú Sĩ đi về trong ngày (dự phòng: Kamakura hoặc Tokyo)</td>
+</tr>
+<tr class="odd">
+<td>8/6</td>
+<td>Thứ 3</td>
+<td>—</td>
+<td>Bay về 10:30 từ HND</td>
+</tr>
+</tbody>
+</table></div>
+<p>Nguyên tắc sắp xếp:</p>
+<ul>
+<li>USJ vào <strong>thứ 6</strong> để tránh đông cuối tuần, vé thường rẻ hơn.</li>
+<li>Chợ Tsukiji vào <strong>thứ 2</strong>, vì chủ nhật nhiều sạp đóng cửa.</li>
+<li>Chỗ đông (Fushimi Inari, Arashiyama) đi <strong>trước 8 giờ sáng</strong>.</li>
+<li><strong>Hai ngày có thể đổi cho nhau:</strong> 31/5 và 7/6 đều ngủ ở Tokyo. Ngày nào dự báo quang hơn thì đi Phú Sĩ, ngày kia đi Tsukiji–Asakusa.</li>
+<li>Hai đêm cuối ở Shinagawa: 15 phút tàu đến Haneda, 20 phút đến Shinjuku.</li>
+</ul>
+<p><strong>Thời tiết:</strong> Tokyo/Kyoto khoảng 24–28°C ban ngày, 16–19°C ban đêm. Mùa mưa (tsuyu) thường bắt đầu khoảng 6–8/6. Núi Phú Sĩ tháng 6 hay bị mây che; rõ nhất buổi sáng sớm.</p>
+<p><strong>Cần xác nhận:</strong> đổi vé máy bay về 10:30 thứ 3, 8/6 (phí đổi vé?). <strong>Giả định:</strong> con 15 tuổi tính giá người lớn ở tàu và USJ, nhưng vào lâu đài Himeji miễn phí (dưới 18).</p>
+<h2 id="chuẩn-bị-và-đặt-trước">Chuẩn bị và đặt trước</h2>
+<p>Không cần JR Pass: với tuyến này mua vé lẻ rẻ hơn.</p>
+<div class="tblwrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Việc cần đặt</th>
+<th>Khi nào</th>
+<th>Ghi chú</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Đổi vé máy bay về 8/6</td>
+<td>Càng sớm càng tốt</td>
+<td>Kiểm tra phí đổi và giá chênh</td>
+</tr>
+<tr class="even">
+<td>Khách sạn Shinjuku, Kyoto, Osaka (Namba), Shinagawa</td>
+<td>4–6 tháng trước</td>
+<td>Gợi ý chuỗi MIMARU (căn hộ 4 người, có bếp); chọn loại huỷ miễn phí</td>
+</tr>
+<tr class="odd">
+<td>Vé USJ + Express Pass (4/6)</td>
+<td>Ngay khi mở bán, khoảng 2–3 tháng trước</td>
+<td>Giá theo ngày, mua sớm rẻ hơn</td>
+</tr>
+<tr class="even">
+<td>teamLab Planets (30/5, 14:30)</td>
+<td>1–2 tháng trước</td>
+<td>Giờ vào cố định</td>
+</tr>
+<tr class="odd">
+<td>Shibuya Sky (30/5, khoảng 18:00)</td>
+<td>4 tuần trước</td>
+<td>Chọn giờ trước hoàng hôn</td>
+</tr>
+<tr class="even">
+<td>Shinkansen (1/6 và 6/6)</td>
+<td>Khoảng 1 tháng trước</td>
+<td>Qua SmartEX; <strong>ghế E</strong> cả hai chiều để nhìn núi Phú Sĩ</td>
+</tr>
+<tr class="odd">
+<td>Fuji Excursion khứ hồi (31/5 hoặc 7/6)</td>
+<td>1 tháng trước</td>
+<td>Toàn ghế đặt trước; đổi hoặc huỷ trước giờ chạy chỉ mất phí nhỏ</td>
+</tr>
+<tr class="even">
+<td>Nhà hàng cần đặt (Hirokawa 3/6, omakase Ginza 7/6)</td>
+<td>1–2 tháng trước</td>
+<td>Tablelog, Omakase.in hoặc nhờ khách sạn</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>App nên cài:</strong> Suica (Apple Wallet), Google Maps, SmartEX, USJ official app, Visit Japan Web, tenki.jp (dự báo thời tiết Nhật).</p>
+<p><strong>Gửi hành lý (takkyubin)</strong>, khoảng ¥2,000–3,000 ($13–20) mỗi vali. Nhờ lễ tân khách sạn gửi; vali đến khách sạn sau trong khoảng 1 ngày.</p>
+<ul>
+<li>Tokyo → Kyoto: gửi tối 31/5.</li>
+<li>Kyoto → Osaka: gửi tối 3/6.</li>
+<li>Osaka → Shinagawa: gửi sáng 5/6, đến nơi 6/6. Ngày Himeji chỉ cần balo.</li>
+</ul>
+<h2 id="lịch-trình-từng-ngày">Lịch trình từng ngày</h2>
+<h3 id="ngày-1-thứ-7-295-đến-tokyo">Ngày 1 — Thứ 7, 29/5: Đến Tokyo</h3>
+<div class="tblwrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Giờ</th>
+<th>Hoạt động</th>
+<th>Chi phí (4 người)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>15:30</td>
+<td>Hạ cánh Haneda (HND) Terminal 3, nhập cảnh, lấy hành lý (khoảng 1 giờ)</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>16:30</td>
+<td>Nạp Suica trên iPhone. Mua vé xe buýt Airport Limousine ở quầy sảnh đến</td>
+<td>¥5,600 ($37)</td>
+</tr>
+<tr class="odd">
+<td>16:45</td>
+<td><strong>Limousine Bus</strong> đến Busta Shinjuku hoặc thẳng khách sạn lớn (40–70 phút). Thay thế: taxi xe lớn ¥10,000–12,000 ($67–80)</td>
+<td>đã gồm</td>
+</tr>
+<tr class="even">
+<td>18:00</td>
+<td>Nhận phòng khách sạn Shinjuku</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>19:00</td>
+<td>Ăn tối nhẹ: tsukemen <strong>Fuunji</strong> hoặc yến <strong>Omoide Yokocho</strong></td>
+<td>¥5,000–12,000 ($33–80)</td>
+</tr>
+<tr class="even">
+<td>20:15</td>
+<td><strong class="opt">Tuỳ chọn</strong> Dạo Kabukicho, chụp đầu Godzilla và mèo 3D</td>
+<td>miễn phí</td>
+</tr>
+<tr class="odd">
+<td>20:45</td>
+<td><strong class="opt">Tuỳ chọn</strong> Đài quan sát Tòa thị chính Tokyo. Mệt thì về ngủ sớm</td>
+<td>miễn phí</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="giới-thiệu-địa-điểm">Giới thiệu địa điểm</h4>
+<div class="places"><div class="place" data-wiki="Omoide_Yokochō"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Omoide Yokocho</strong> (思い出横丁, “Hẻm kỷ niệm”)</p>
+<p>Con hẻm nhỏ sát ga Shinjuku, hình thành từ chợ đen sau Thế chiến II. Hai bên là hàng chục quán yakitori (xiên nướng) chỉ vài chỗ ngồi, khói than và đèn lồng đỏ. Người Nhật hay gọi đùa là “hẻm đi tiểu” vì ngày xưa không có nhà vệ sinh.</p>
+<p><em>Mở cửa:</em> khoảng 17:00 đến khuya · <em>Nên dành:</em> 30–60 phút · <em>Lưu ý:</em> quán nhỏ, nhóm 4 người có thể phải chờ; một số quán thu phí ngồi.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Kabukichō"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Kabukicho và đầu Godzilla</strong> (歌舞伎町)</p>
+<p>Khu giải trí đêm lớn nhất Tokyo, đầy biển đèn neon. Trên nóc Hotel Gracery có đầu khủng long Godzilla cao như người thật, nhìn thấy từ đường Kabukicho Ichibangai. Gần lối ra Đông ga Shinjuku có màn hình cong chiếu con mèo 3D khổng lồ.</p>
+<p><em>Nên dành:</em> 20–30 phút · <em>Lưu ý:</em> đi theo đường chính; lờ những người mời chào vào quán.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Tokyo_Metropolitan_Government_Building"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Tòa thị chính Tokyo</strong> (東京都庁)</p>
+<p>Tòa nhà đôi cao 243 m do kiến trúc sư Kenzo Tange thiết kế. Đài quan sát ở tầng 45 <strong>miễn phí</strong>, nhìn toàn cảnh Tokyo về đêm. Ngày trời trong (thường vào mùa đông) có thể thấy núi Phú Sĩ.</p>
+<p><em>Mở cửa:</em> khoảng 9:30–22:00 · <em>Nên dành:</em> 30–45 phút.</p>
+</div></div><!--/place-->
+</div><h4 id="chụp-hình-nhanh">Chụp hình nhanh</h4>
+<ul>
+<li><strong>Omoide Yokocho:</strong> hẻm đèn lồng đỏ, chụp từ đầu hẻm phía ga.</li>
+<li><strong>Đầu Godzilla:</strong> nhìn từ đường Kabukicho Ichibangai.</li>
+<li><strong>Mèo 3D:</strong> màn hình Cross Shinjuku Vision, lối ra Đông ga Shinjuku.</li>
+</ul>
+<h3 id="ngày-2-chủ-nhật-305-meiji-jingu-shibuya-teamlab">Ngày 2 — Chủ nhật, 30/5: Meiji Jingu, Shibuya, teamLab</h3>
+<div class="tblwrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Giờ</th>
+<th>Hoạt động</th>
+<th>Chi phí (4 người)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:45</td>
+<td>Ăn sáng nhanh</td>
+<td>¥3,000 ($20)</td>
+</tr>
+<tr class="even">
+<td>8:30</td>
+<td>Đền <strong>Meiji Jingu</strong>, đi bộ trong rừng</td>
+<td>miễn phí</td>
+</tr>
+<tr class="odd">
+<td>9:45</td>
+<td><strong class="opt">Tuỳ chọn</strong> Phố Takeshita (Harajuku), đại lộ Omotesando</td>
+<td>tùy mua sắm</td>
+</tr>
+<tr class="even">
+<td>11:45</td>
+<td>Ăn trưa: ramen <strong>Afuri</strong> (nước dùng yuzu, nhẹ)</td>
+<td>¥6,000 ($40)</td>
+</tr>
+<tr class="odd">
+<td>13:00</td>
+<td><strong>Ngã tư Shibuya</strong>, tượng Hachiko</td>
+<td>miễn phí</td>
+</tr>
+<tr class="even">
+<td>13:20</td>
+<td><strong class="opt">Tuỳ chọn</strong> Nintendo Tokyo ở Shibuya Parco</td>
+<td>tùy mua sắm</td>
+</tr>
+<tr class="odd">
+<td>13:45</td>
+<td>Tàu đến Shin-Toyosu (khoảng 40 phút)</td>
+<td>Suica</td>
+</tr>
+<tr class="even">
+<td>14:30</td>
+<td><strong>teamLab Planets</strong> (60–90 phút)</td>
+<td>¥15,400 ($103)</td>
+</tr>
+<tr class="odd">
+<td>16:15</td>
+<td>Tàu về Shibuya (khoảng 45 phút), nghỉ cà phê</td>
+<td>Suica</td>
+</tr>
+<tr class="even">
+<td>18:00</td>
+<td><strong>Shibuya Sky</strong> lúc hoàng hôn (mặt trời lặn khoảng 18:50)</td>
+<td>¥12,000 ($80)</td>
+</tr>
+<tr class="odd">
+<td>19:30</td>
+<td>Ăn tối: sushi băng chuyền <strong>Uobei</strong> (gọi món bằng máy tính bảng)</td>
+<td>¥6,000–8,000 ($40–53)</td>
+</tr>
+<tr class="even">
+<td>20:30</td>
+<td>Về Shinjuku (khoảng 7 phút)</td>
+<td>Suica</td>
+</tr>
+</tbody>
+</table></div>
+<p>Nếu mệt: bỏ Takeshita và Nintendo Tokyo, về khách sạn nghỉ sau teamLab rồi quay lại Shibuya lúc 17:30.</p>
+<h4 id="giới-thiệu-địa-điểm-1">Giới thiệu địa điểm</h4>
+<div class="places"><div class="place" data-wiki="Meiji_Shrine"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Đền Meiji Jingu</strong> (明治神宮)</p>
+<p>Đền Thần đạo lớn nhất Tokyo, thờ Thiên hoàng Minh Trị và Hoàng hậu, xây năm 1920. Đền nằm giữa khu rừng khoảng 100.000 cây do người dân khắp nước Nhật hiến tặng. Đi qua cổng torii gỗ khổng lồ là bức tường thùng rượu sake được các nhà nấu rượu dâng cúng. Sáng chủ nhật hay gặp đám cưới truyền thống.</p>
+<p><em>Mở cửa:</em> từ lúc mặt trời mọc đến lặn · <em>Nên dành:</em> 60 phút · <em>Vào cửa:</em> miễn phí.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Takeshita_Street"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Phố Takeshita</strong> (竹下通り, Harajuku)</p>
+<p>Con phố đi bộ dài khoảng 350 m, trung tâm thời trang giới trẻ Tokyo. Nổi tiếng với bánh crepe, kẹo bông khổng lồ và các cửa hàng phong cách “kawaii”. Cuối tuần rất đông.</p>
+<p><em>Nên dành:</em> 30–60 phút · <em>Lưu ý:</em> đi sớm trước 11:00 cho đỡ chen.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Shibuya_Crossing"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Ngã tư Shibuya</strong> (渋谷スクランブル交差点)</p>
+<p>Được xem là ngã tư đi bộ đông nhất thế giới: mỗi lần đèn xanh có thể hàng nghìn người cùng băng qua theo mọi hướng. Đây là hình ảnh biểu tượng của Tokyo hiện đại, xuất hiện trong nhiều phim.</p>
+<p><em>Nên dành:</em> 20–30 phút · <em>Mẹo:</em> đi qua 1–2 lần, rồi lên cao (Shibuya Sky, Starbucks Tsutaya, MAGNET by Shibuya109) để chụp từ trên xuống.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Hachikō"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Tượng chó Hachiko</strong> (ハチ公)</p>
+<p>Tượng đồng chú chó Akita trung thành, ngày ngày ra ga Shibuya chờ chủ suốt gần 10 năm sau khi ông mất (1925–1935). Câu chuyện được dựng thành phim <em>Hachi: A Dog’s Tale</em> (2009). Tượng là điểm hẹn quen thuộc của người Tokyo.</p>
+<p><em>Nên dành:</em> 5–10 phút · <em>Lưu ý:</em> hay có hàng chờ chụp hình.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="TeamLab_Planets"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>teamLab Planets</strong> (Toyosu)</p>
+<p>Bảo tàng nghệ thuật kỹ thuật số “nhập vai”: khách đi chân trần, lội nước đến đầu gối giữa đàn cá koi chiếu sáng, đứng trong phòng hoa lơ lửng và phòng gương vô tận. Dự kiến đóng cửa cuối năm 2027, nên 2027 là năm cuối có thể xem.</p>
+<p><em>Nên dành:</em> 60–90 phút · <em>Lưu ý:</em> mặc quần xắn được lên gối; có tủ khóa miễn phí. Nên mặc đồ sáng màu để ảnh đẹp.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Shibuya_Scramble_Square"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Shibuya Sky</strong> (渋谷スカイ)</p>
+<p>Sân thượng ngoài trời trên tầng 47 tòa Shibuya Scramble Square, cao khoảng 230 m, nhìn thẳng xuống ngã tư Shibuya. Lúc hoàng hôn thấy cả Tokyo chuyển từ vàng sang đèn đêm; trời trong có thể thấy núi Phú Sĩ.</p>
+<p><em>Mở cửa:</em> khoảng 10:00–22:30 · <em>Nên dành:</em> 60 phút · <em>Lưu ý:</em> vé theo giờ, khung hoàng hôn hết rất nhanh. Không mang túi lên sân thượng; có tủ gửi đồ.</p>
+</div></div><!--/place-->
+</div><h4 id="chụp-hình-nhanh-1">Chụp hình nhanh</h4>
+<ul>
+<li><strong>Bức tường thùng rượu sake</strong> trên lối vào Meiji Jingu.</li>
+<li><strong>Cổng phố Takeshita</strong> nhìn từ ga Harajuku.</li>
+<li><strong>Ngã tư Shibuya từ trên cao:</strong> tầng 2 Starbucks Tsutaya (miễn phí, đông) hoặc sân thượng MAGNET by Shibuya109.</li>
+<li><strong>teamLab:</strong> phòng nước có cá koi và phòng hoa lơ lửng.</li>
+<li><strong>Shibuya Sky:</strong> góc kính sát mép tòa nhà.</li>
+</ul>
+<h3 id="ngày-3-thứ-2-315-tsukiji-asakusa-akihabara">Ngày 3 — Thứ 2, 31/5: Tsukiji, Asakusa, Akihabara</h3>
+<p><em>Ngày này có thể đổi với ngày 10 (7/6): nếu dự báo 31/5 quang hơn, đi Phú Sĩ hôm nay và để Tsukiji–Asakusa sang 7/6.</em></p>
+<div class="tblwrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Giờ</th>
+<th>Hoạt động</th>
+<th>Chi phí (4 người)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:30</td>
+<td>Tàu đến Tsukiji (khoảng 20 phút)</td>
+<td>Suica</td>
+</tr>
+<tr class="even">
+<td>7:45</td>
+<td>Ăn sáng ở <strong>chợ ngoài Tsukiji</strong>: sushi, trứng cuộn tamagoyaki, sò nướng</td>
+<td>¥10,000–16,000 ($67–107)</td>
+</tr>
+<tr class="odd">
+<td>9:30</td>
+<td><strong class="opt">Tuỳ chọn</strong> Vườn <strong>Hama-rikyu</strong>, uống trà matcha bên hồ</td>
+<td>¥3,000 ($20) gồm trà</td>
+</tr>
+<tr class="even">
+<td>11:00</td>
+<td>Tàu đến Asakusa (khoảng 20 phút)</td>
+<td>Suica</td>
+</tr>
+<tr class="odd">
+<td>11:30</td>
+<td>Ăn trưa: tempura <strong>Daikokuya</strong> hoặc cơm lươn</td>
+<td>¥8,000–12,000 ($53–80)</td>
+</tr>
+<tr class="even">
+<td>12:45</td>
+<td>Chùa <strong>Senso-ji</strong>, phố Nakamise</td>
+<td>miễn phí</td>
+</tr>
+<tr class="odd">
+<td>14:00</td>
+<td>Cầu <strong>Azumabashi</strong>: Skytree và tòa nhà Asahi</td>
+<td>miễn phí</td>
+</tr>
+<tr class="even">
+<td>14:45</td>
+<td><strong class="opt">Tuỳ chọn</strong> <strong>Akihabara</strong>. Ba mẹ có thể về khách sạn nghỉ</td>
+<td>tùy mua sắm</td>
+</tr>
+<tr class="odd">
+<td>17:30</td>
+<td>Về khách sạn, <strong>gửi vali lớn đi Kyoto</strong></td>
+<td>¥8,000–12,000 ($53–80)</td>
+</tr>
+<tr class="even">
+<td>19:00</td>
+<td>Ăn tối: <strong>Gyukatsu Motomura</strong> (bò chiên tự nướng trên đá, có chi nhánh Shinjuku)</td>
+<td>¥8,000–10,000 ($53–67)</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="giới-thiệu-địa-điểm-2">Giới thiệu địa điểm</h4>
+<div class="places"><div class="place" data-wiki="Tsukiji_fish_market"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Chợ ngoài Tsukiji</strong> (築地場外市場)</p>
+<p>Chợ cá bán buôn Tsukiji đã chuyển sang Toyosu năm 2018, nhưng khu chợ ngoài với khoảng 400 sạp vẫn ở lại. Đây là nơi ăn sáng hải sản tươi nổi tiếng: sushi, cơm hải sản, trứng cuộn tamagoyaki nóng, sò điệp nướng, dâu tây và bánh dorayaki.</p>
+<p><em>Mở cửa:</em> khoảng 6:00–14:00 (nhiều sạp nghỉ chủ nhật và một số thứ 4) · <em>Nên dành:</em> 1,5 giờ · <em>Lưu ý:</em> ăn đứng tại sạp, không vừa đi vừa ăn.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Hama-rikyū_Gardens"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Vườn Hama-rikyu</strong> (浜離宮恩賜庭園)</p>
+<p>Vườn cổ hơn 350 năm của dòng họ Tokugawa, nằm giữa các tòa nhà chọc trời khu Shiodome. Có hồ nước mặn thay đổi theo thủy triều và quán trà Nakajima giữa hồ, nơi uống matcha với bánh ngọt Nhật.</p>
+<p><em>Mở cửa:</em> khoảng 9:00–17:00 · <em>Nên dành:</em> 45–60 phút.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Sensō-ji"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Chùa Senso-ji</strong> (浅草寺, Asakusa)</p>
+<p>Ngôi chùa cổ nhất Tokyo, lập năm 628 thờ Quan Âm. Vào chùa qua <strong>cổng Kaminarimon</strong> với lồng đèn đỏ khổng lồ nặng khoảng 700 kg, rồi đi qua <strong>phố Nakamise</strong> dài khoảng 250 m bán đồ lưu niệm và bánh truyền thống. Có thể rút quẻ omikuji (¥100).</p>
+<p><em>Mở cửa:</em> chính điện khoảng 6:00–17:00; sân chùa mở cả ngày · <em>Nên dành:</em> 1–1,5 giờ.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Azuma_Bridge"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Cầu Azumabashi</strong> (吾妻橋)</p>
+<p>Cây cầu đỏ bắc qua sông Sumida, cách Senso-ji 5 phút đi bộ. Từ đây nhìn thấy cùng lúc tháp <strong>Tokyo Skytree</strong> (634 m, tháp cao nhất Nhật Bản) và tòa nhà Asahi với hình “ngọn lửa vàng” trên nóc.</p>
+<p><em>Nên dành:</em> 10–15 phút.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Akihabara"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Akihabara</strong> (秋葉原)</p>
+<p>“Thị trấn điện tử” và thủ phủ văn hóa anime, manga, game của Nhật. Có các tòa nhà nhiều tầng bán mô hình, thẻ bài, máy chơi game cũ (Super Potato), đồ điện tử (Yodobashi Akiba) và khu trò chơi arcade.</p>
+<p><em>Mở cửa:</em> đa số cửa hàng 10:00/11:00–20:00 · <em>Nên dành:</em> 2–3 giờ.</p>
+</div></div><!--/place-->
+</div><h4 id="chụp-hình-nhanh-2">Chụp hình nhanh</h4>
+<ul>
+<li><strong>Sạp trứng cuộn ở Tsukiji:</strong> quay cảnh đầu bếp lật trứng.</li>
+<li><strong>Cổng Kaminarimon:</strong> chụp từ bên kia đường để thấy trọn lồng đèn.</li>
+<li><strong>Tháp 5 tầng Senso-ji cùng Skytree</strong> trong một khung, chụp từ sân bên phải chính điện.</li>
+<li><strong>Cầu Azumabashi:</strong> Skytree, tòa nhà Asahi và sông Sumida.</li>
+<li><strong>Akihabara:</strong> tòa Radio Kaikan và phố đèn Chuo-dori.</li>
+</ul>
+<h3 id="ngày-4-thứ-3-16-tokyo-kyoto">Ngày 4 — Thứ 3, 1/6: Tokyo → Kyoto</h3>
+<div class="tblwrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Giờ</th>
+<th>Hoạt động</th>
+<th>Chi phí (4 người)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>8:00</td>
+<td>Trả phòng, ăn sáng nhanh</td>
+<td>¥3,000 ($20)</td>
+</tr>
+<tr class="even">
+<td>8:30</td>
+<td>JR Shinjuku → Shinagawa (khoảng 20 phút)</td>
+<td>Suica</td>
+</tr>
+<tr class="odd">
+<td>9:00</td>
+<td><strong>Shinkansen Nozomi</strong> Shinagawa → Kyoto (khoảng 2 giờ 10). <strong>Ghế E</strong>: núi Phú Sĩ hiện ra khoảng 40–50 phút sau khi chạy</td>
+<td>¥56,700 ($378)</td>
+</tr>
+<tr class="even">
+<td>11:15</td>
+<td>Gửi đồ ở khách sạn khu Shijo-Karasuma (vali đã đến trước)</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>11:45</td>
+<td>Ăn trưa và ăn vặt ở <strong>chợ Nishiki</strong></td>
+<td>¥8,000 ($53)</td>
+</tr>
+<tr class="even">
+<td>13:30</td>
+<td>Taxi đến <strong>Kiyomizu-dera</strong> (khoảng 15 phút)</td>
+<td>taxi ¥2,000 ($13) + vé ¥2,000 ($13)</td>
+</tr>
+<tr class="odd">
+<td>15:00</td>
+<td>Dốc <strong>Sannenzaka, Ninenzaka</strong>, tháp Yasaka</td>
+<td>miễn phí</td>
+</tr>
+<tr class="even">
+<td>16:00</td>
+<td><strong class="opt">Tuỳ chọn</strong> Đền <strong>Yasaka</strong>, công viên Maruyama</td>
+<td>miễn phí</td>
+</tr>
+<tr class="odd">
+<td>16:30</td>
+<td>Về khách sạn nhận phòng, nghỉ</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>18:00</td>
+<td>Đi bộ <strong>Gion</strong>: Shirakawa, Hanamikoji</td>
+<td>miễn phí</td>
+</tr>
+<tr class="odd">
+<td>18:30</td>
+<td>Ăn tối: okonomiyaki <strong>Gion Tanto</strong> bên kênh Shirakawa</td>
+<td>¥8,000 ($53)</td>
+</tr>
+<tr class="even">
+<td>20:00</td>
+<td><strong class="opt">Tuỳ chọn</strong> Dạo hẻm <strong>Pontocho</strong> và bờ sông Kamo</td>
+<td>miễn phí</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="giới-thiệu-địa-điểm-3">Giới thiệu địa điểm</h4>
+<div class="places"><div class="place" data-wiki="Nishiki_Market"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Chợ Nishiki</strong> (錦市場, “Nhà bếp của Kyoto”)</p>
+<p>Con phố chợ có mái che dài khoảng 400 m với hơn 100 sạp, có lịch sử hơn 400 năm. Nên thử: bạch tuộc nhỏ nhồi trứng cút, đậu hũ chiên, dưa muối tsukemono, chả cá, kem matcha, bánh mochi.</p>
+<p><em>Mở cửa:</em> khoảng 10:00–17:00 (một số sạp nghỉ thứ 4) · <em>Nên dành:</em> 1–1,5 giờ · <em>Lưu ý:</em> chợ cấm vừa đi vừa ăn; ăn tại chỗ sạp bán.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Kiyomizu-dera"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Chùa Kiyomizu-dera</strong> (清水寺, “Chùa Nước Trong”)</p>
+<p>Di sản UNESCO, lập năm 778. Nổi tiếng nhất là <strong>sân gỗ lớn</strong> nhô ra sườn đồi, cao 13 m, dựng hoàn toàn không dùng đinh. Dưới chùa có thác Otowa chia ba dòng, theo truyền thuyết mang lại sức khỏe, tình duyên và học vấn.</p>
+<p><em>Mở cửa:</em> khoảng 6:00–18:00 · <em>Nên dành:</em> 1–1,5 giờ · <em>Lưu ý:</em> đường lên dốc; buổi chiều khá đông.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Hōkan-ji"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Dốc Sannenzaka, Ninenzaka và tháp Yasaka</strong> (産寧坂・二寧坂・八坂の塔)</p>
+<p>Các con dốc lát đá với nhà gỗ truyền thống, nối Kiyomizu-dera xuống khu Gion. Dọc đường có quán trà, đồ gốm, quạt, và Starbucks trong nhà gỗ cổ. Cuối dốc là tháp 5 tầng Yasaka (chùa Hokan-ji), một trong những góc ảnh kinh điển nhất Kyoto.</p>
+<p><em>Nên dành:</em> 45–60 phút · <em>Lưu ý:</em> theo truyền thuyết, ai vấp ngã ở Sannenzaka sẽ gặp xui, nên đi cẩn thận.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Yasaka_Shrine"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Đền Yasaka</strong> (八坂神社)</p>
+<p>Đền Thần đạo hơn 1.350 năm tuổi ở đầu đường Shijo, gắn với lễ hội Gion Matsuri nổi tiếng mỗi tháng 7. Cổng tây màu cam là điểm mốc của khu Gion. Buổi tối hàng trăm đèn lồng sáng lên.</p>
+<p><em>Mở cửa:</em> cả ngày · <em>Nên dành:</em> 20–30 phút · <em>Vào cửa:</em> miễn phí.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Gion"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Gion, Shirakawa và Hanamikoji</strong> (祇園)</p>
+<p>Khu geisha nổi tiếng nhất Nhật Bản. <strong>Shirakawa</strong> là con kênh nhỏ với hàng liễu và nhà gỗ cổ; <strong>Hanamikoji</strong> là phố đá với các nhà trà truyền thống. Lúc chập tối có thể thấy geiko và maiko (geisha học việc) đi làm.</p>
+<p><em>Nên dành:</em> 1 giờ · <em>Lưu ý:</em> không chụp cận mặt, không chặn đường geisha, không vào hẻm tư (có biển cấm, có thể bị phạt ¥10,000).</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Pontochō"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Hẻm Pontocho</strong> (先斗町)</p>
+<p>Con hẻm hẹp chạy song song sông Kamo, dài khoảng 500 m, hai bên là nhà hàng và quán trà. Mùa hè (từ tháng 5) nhiều quán dựng sàn gỗ “kawayuka” nhìn ra sông.</p>
+<p><em>Nên dành:</em> 30 phút · <em>Lưu ý:</em> nhiều quán đắt và cần đặt trước; dạo xem là đủ.</p>
+</div></div><!--/place-->
+</div><h4 id="chụp-hình-nhanh-3">Chụp hình nhanh</h4>
+<ul>
+<li><strong>Từ cửa sổ Shinkansen</strong> (ghế E): núi Phú Sĩ, đoạn qua sông Fuji gần ga Shin-Fuji.</li>
+<li><strong>Kiyomizu-dera:</strong> chụp sân gỗ lớn từ lối đi phía nam (sau điện Okunoin).</li>
+<li><strong>Tháp Yasaka</strong> nhìn từ dốc Yasaka-dori.</li>
+<li><strong>Starbucks Ninenzaka:</strong> nhà gỗ truyền thống, rèm noren.</li>
+<li><strong>Cầu Tatsumi</strong> (Gion Shirakawa): nhà gỗ cổ bên kênh, cây liễu.</li>
+</ul>
+<h3 id="ngày-5-thứ-4-26-fushimi-inari-nanzen-ji-triết-lộ-ginkaku-ji">Ngày 5 — Thứ 4, 2/6: Fushimi Inari, Nanzen-ji, Triết lộ, Ginkaku-ji</h3>
+<div class="tblwrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Giờ</th>
+<th>Hoạt động</th>
+<th>Chi phí (4 người)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>6:45</td>
+<td>Tàu JR Nara line từ ga Kyoto đến Inari (5 phút)</td>
+<td>Suica</td>
+</tr>
+<tr class="even">
+<td>7:00</td>
+<td><strong>Fushimi Inari</strong>: đi qua đường hầm cổng Senbon Torii (20–30 phút)</td>
+<td>miễn phí</td>
+</tr>
+<tr class="odd">
+<td>7:30</td>
+<td><strong class="opt">Tuỳ chọn</strong> Leo tiếp đến Yotsutsuji, view toàn Kyoto (thêm khoảng 1 giờ)</td>
+<td>miễn phí</td>
+</tr>
+<tr class="even">
+<td>9:15</td>
+<td>Ăn sáng: inari sushi gần cổng đền</td>
+<td>¥3,000 ($20)</td>
+</tr>
+<tr class="odd">
+<td>10:00</td>
+<td>Taxi đến <strong>Nanzen-ji</strong> (khoảng 25 phút)</td>
+<td>¥3,000 ($20)</td>
+</tr>
+<tr class="even">
+<td>10:30</td>
+<td><strong>Nanzen-ji</strong> và cầu dẫn nước Suirokaku. <strong class="opt">Tuỳ chọn</strong> Leo cổng Sanmon</td>
+<td>miễn phí (cổng Sanmon ¥2,400 ($16))</td>
+</tr>
+<tr class="odd">
+<td>11:45</td>
+<td>Ăn trưa: đậu phụ nóng yudofu <strong>Okutan Nanzenji</strong></td>
+<td>¥14,000–16,000 ($93–107)</td>
+</tr>
+<tr class="even">
+<td>13:15</td>
+<td><strong>Triết lộ (Philosopher’s Path)</strong>: khoảng 2 km, 30–40 phút đi bộ</td>
+<td>miễn phí</td>
+</tr>
+<tr class="odd">
+<td>14:00</td>
+<td><strong>Ginkaku-ji</strong> (Chùa Bạc)</td>
+<td>¥2,000 ($13)</td>
+</tr>
+<tr class="even">
+<td>15:00</td>
+<td>Taxi về khách sạn nghỉ</td>
+<td>¥2,500 ($17)</td>
+</tr>
+<tr class="odd">
+<td>18:30</td>
+<td>Ăn tối: ramen <strong>Menya Inoichi</strong> (Michelin Bib) hoặc izakaya quanh Shijo</td>
+<td>¥6,000–10,000 ($40–67)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Nếu mệt: chỉ đi đoạn Senbon Torii ở Fushimi Inari, bỏ cổng Sanmon.</p>
+<h4 id="giới-thiệu-địa-điểm-4">Giới thiệu địa điểm</h4>
+<div class="places"><div class="place" data-wiki="Fushimi_Inari-taisha"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Đền Fushimi Inari Taisha</strong> (伏見稲荷大社)</p>
+<p>Đền chính trong khoảng 30.000 đền thờ thần lúa Inari khắp Nhật Bản, lập từ năm 711. Nổi tiếng với khoảng <strong>10.000 cổng torii đỏ</strong> do các doanh nghiệp và cá nhân dâng cúng, xếp thành đường hầm leo lên núi Inari. Tượng cáo khắp nơi là sứ giả của thần.</p>
+<p><em>Mở cửa:</em> 24 giờ · <em>Nên dành:</em> 1–2,5 giờ tuỳ leo bao xa · <em>Vào cửa:</em> miễn phí · <em>Lưu ý:</em> đến trước 7:30 để vắng người.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Nanzen-ji"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Chùa Nanzen-ji</strong> (南禅寺)</p>
+<p>Một trong những chùa Thiền quan trọng nhất Nhật Bản, lập năm 1291. Cổng Sanmon cao 22 m, leo lên có ban công nhìn ra thành phố. Trong khuôn viên có <strong>cầu dẫn nước Suirokaku</strong> bằng gạch đỏ kiểu La Mã, xây thời Minh Trị, rất lạ mắt giữa chùa cổ.</p>
+<p><em>Mở cửa:</em> khoảng 8:40–17:00 · <em>Nên dành:</em> 1 giờ · <em>Vào cửa:</em> khuôn viên miễn phí.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Philosopher&#x27;s_Walk"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Triết lộ</strong> (哲学の道, Philosopher’s Path)</p>
+<p>Lối đi bộ lát đá dọc con kênh nhỏ, dài khoảng 2 km từ Nanzen-ji lên Ginkaku-ji. Tên gọi từ triết gia Nishida Kitaro, người hay đi dạo suy ngẫm ở đây. Hai bên là cây anh đào, quán cà phê nhỏ và chùa cổ. Đầu tháng 6 xanh mát, vắng hơn mùa hoa.</p>
+<p><em>Nên dành:</em> 30–60 phút · <em>Lưu ý:</em> đường bằng, đi nhẹ nhàng, hợp với ba mẹ.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Ginkaku-ji"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Chùa Bạc Ginkaku-ji</strong> (銀閣寺)</p>
+<p>Biệt thự nghỉ dưỡng của tướng quân Ashikaga Yoshimasa, xây năm 1482, sau thành chùa Thiền. Dù tên là “Chùa Bạc” nhưng chưa từng được dát bạc. Nổi bật với vườn cát trắng cào sóng và nón cát cao gọi là “đài ngắm trăng”, cùng đường dạo lên đồi nhìn toàn cảnh.</p>
+<p><em>Mở cửa:</em> khoảng 8:30–17:00 · <em>Nên dành:</em> 45–60 phút.</p>
+</div></div><!--/place-->
+</div><h4 id="chụp-hình-nhanh-4">Chụp hình nhanh</h4>
+<ul>
+<li><strong>Senbon Torii:</strong> đi quá đoạn đầu 5–10 phút sẽ vắng người hơn.</li>
+<li><strong>Cầu dẫn nước Suirokaku:</strong> vòm gạch kiểu Âu giữa chùa Nhật.</li>
+<li><strong>Triết lộ:</strong> kênh nước, hàng cây, nhà gỗ hai bên.</li>
+<li><strong>Ginkaku-ji:</strong> nón cát trắng, và chùa nhìn từ đường dạo trên đồi.</li>
+</ul>
+<h3 id="ngày-6-thứ-5-36-arashiyama-kinkaku-ji">Ngày 6 — Thứ 5, 3/6: Arashiyama, Kinkaku-ji</h3>
+<div class="tblwrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Giờ</th>
+<th>Hoạt động</th>
+<th>Chi phí (4 người)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:00</td>
+<td>Tàu JR Sagano Kyoto → Saga-Arashiyama (khoảng 15 phút)</td>
+<td>Suica</td>
+</tr>
+<tr class="even">
+<td>7:30</td>
+<td><strong>Rừng tre Arashiyama</strong> (vắng trước 8:30)</td>
+<td>miễn phí</td>
+</tr>
+<tr class="odd">
+<td>8:30</td>
+<td>Chùa <strong>Tenryu-ji</strong></td>
+<td>¥2,000 ($13)</td>
+</tr>
+<tr class="even">
+<td>9:45</td>
+<td><strong class="opt">Tuỳ chọn</strong> Biệt thự <strong>Okochi Sanso</strong> (vé gồm trà matcha và bánh)</td>
+<td>¥4,000 ($27)</td>
+</tr>
+<tr class="odd">
+<td>11:00</td>
+<td>Cầu <strong>Togetsukyo</strong>, Rừng Kimono ở ga Randen Arashiyama</td>
+<td>miễn phí</td>
+</tr>
+<tr class="even">
+<td>11:45</td>
+<td>Ăn trưa: cơm lươn <strong>Hirokawa</strong> (Michelin, nên đặt trước)</td>
+<td>¥20,000–26,000 ($133–173)</td>
+</tr>
+<tr class="odd">
+<td>13:30</td>
+<td>Taxi đến <strong>Kinkaku-ji</strong> (khoảng 25 phút)</td>
+<td>taxi ¥3,000 ($20) + vé ¥2,000 ($13)</td>
+</tr>
+<tr class="even">
+<td>15:00</td>
+<td>Về khách sạn nghỉ, hoặc <strong class="opt">Tuỳ chọn</strong> dạo phố mua sắm Teramachi–Shinkyogoku</td>
+<td>tùy mua sắm</td>
+</tr>
+<tr class="odd">
+<td>17:30</td>
+<td><strong>Gửi vali đi Osaka</strong></td>
+<td>¥8,000–12,000 ($53–80)</td>
+</tr>
+<tr class="even">
+<td>19:00</td>
+<td>Ăn tối: tonkatsu <strong>Katsukura</strong> (Sanjo hoặc ga Kyoto)</td>
+<td>¥8,000 ($53)</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="giới-thiệu-địa-điểm-5">Giới thiệu địa điểm</h4>
+<div class="places"><div class="place" data-wiki="Bamboo_Forest_(Kyoto,_Japan)"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Rừng tre Arashiyama</strong> (嵐山竹林の小径)</p>
+<p>Lối đi dài khoảng 400 m xuyên qua rừng tre cao vút. Khi có gió, tiếng tre xào xạc được Bộ Môi trường Nhật xếp vào “100 âm thanh cần gìn giữ”. Ban ngày rất đông, sáng sớm mới có cảm giác yên tĩnh.</p>
+<p><em>Mở cửa:</em> cả ngày · <em>Nên dành:</em> 20–30 phút · <em>Vào cửa:</em> miễn phí.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Tenryū-ji"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Chùa Tenryu-ji</strong> (天龍寺)</p>
+<p>Chùa Thiền đứng đầu khu Arashiyama, di sản UNESCO, lập năm 1339. Khu vườn Sogenchi với hồ nước và núi Arashiyama làm phông nền là một trong những vườn cổ nhất Nhật Bản, gần như giữ nguyên thiết kế từ thế kỷ 14. Cổng sau thông thẳng ra rừng tre.</p>
+<p><em>Mở cửa:</em> khoảng 8:30–17:00 · <em>Nên dành:</em> 45–60 phút.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Ōkōchi_Sansō"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Biệt thự Okochi Sanso</strong> (大河内山荘)</p>
+<p>Biệt thự và vườn rộng của tài tử phim kiếm hiệp Denjiro Okochi, xây trong khoảng 30 năm. Lối dạo trên sườn núi nhìn xuống Kyoto và hẻm núi Hozu. Vé vào đã gồm một chén matcha và bánh ngọt ở quán trà cuối đường.</p>
+<p><em>Mở cửa:</em> khoảng 9:00–17:00 · <em>Nên dành:</em> 45–60 phút · <em>Lưu ý:</em> đường dốc nhẹ, nhiều bậc.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Togetsukyō"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Cầu Togetsukyo</strong> (渡月橋, “Cầu trăng qua”)</p>
+<p>Cây cầu gỗ dài 155 m bắc qua sông Katsura, biểu tượng của Arashiyama. Tên cầu đến từ một vị Thiên hoàng thế kỷ 13 thấy trăng như đang đi qua cầu. Gần đó, ga tàu điện Randen Arashiyama có <strong>Rừng Kimono</strong>: khoảng 600 cột trụ bọc vải kimono nhiều màu.</p>
+<p><em>Nên dành:</em> 20–30 phút.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Kinkaku-ji"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Chùa Vàng Kinkaku-ji</strong> (金閣寺)</p>
+<p>Biểu tượng nổi tiếng nhất Kyoto, di sản UNESCO. Hai tầng trên được dát vàng lá, soi bóng xuống hồ Kyokochi. Ngôi chùa gốc từ năm 1397 bị một nhà sư đốt năm 1950; bản hiện nay xây lại năm 1955.</p>
+<p><em>Mở cửa:</em> khoảng 9:00–17:00 · <em>Nên dành:</em> 45 phút · <em>Lưu ý:</em> đi theo một chiều, góc chụp đẹp nhất nằm ngay đầu lối đi.</p>
+</div></div><!--/place-->
+</div><h4 id="chụp-hình-nhanh-5">Chụp hình nhanh</h4>
+<ul>
+<li><strong>Rừng tre:</strong> đến trước 8:00; chụp ngược lên ngọn tre.</li>
+<li><strong>Cầu Togetsukyo</strong> với núi xanh phía sau, chụp từ bờ sông phía bắc.</li>
+<li><strong>Rừng Kimono</strong> trong ga Randen Arashiyama.</li>
+<li><strong>Kinkaku-ji:</strong> chỗ đầu tiên bên hồ sau cổng, có bóng chùa dưới nước.</li>
+</ul>
+<h3 id="ngày-7-thứ-6-46-universal-studios-japan">Ngày 7 — Thứ 6, 4/6: Universal Studios Japan</h3>
+<div class="tblwrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Giờ</th>
+<th>Hoạt động</th>
+<th>Chi phí (4 người)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:00</td>
+<td>Trả phòng, chỉ mang balo. JR Kyoto → Universal City (đổi tàu ở Osaka/Nishikujo, khoảng 55 phút)</td>
+<td>¥4,000 ($27)</td>
+</tr>
+<tr class="even">
+<td>8:00</td>
+<td>Xếp hàng trước cổng (cổng thường mở sớm hơn giờ ghi)</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>8:30</td>
+<td><strong>Super Nintendo World</strong> đầu tiên, rồi <strong>Harry Potter</strong></td>
+<td>vé ¥36,000–42,000 ($240–280)</td>
+</tr>
+<tr class="even">
+<td>12:30</td>
+<td>Ăn trưa trong công viên</td>
+<td>¥8,000–10,000 ($53–67)</td>
+</tr>
+<tr class="odd">
+<td>13:30</td>
+<td>Minion Park, Jurassic Park, Hollywood Dream</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>15:00</td>
+<td><strong class="opt">Tuỳ chọn</strong> Ba mẹ về khách sạn Namba nghỉ trước, hai con ở lại đến tối</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>18:30</td>
+<td>Ăn tối ở Universal CityWalk hoặc về Namba</td>
+<td>¥8,000 ($53)</td>
+</tr>
+<tr class="even">
+<td>20:00</td>
+<td>Tàu về khách sạn khu Namba (khoảng 25 phút)</td>
+<td>Suica</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Express Pass:</strong> tuỳ chọn, ¥15,000–30,000 ($100–200)/người tuỳ ngày. Đắt, nhưng tiết kiệm 3–4 giờ xếp hàng.</p>
+<h4 id="giới-thiệu-địa-điểm-6">Giới thiệu địa điểm</h4>
+<div class="places"><div class="place" data-wiki="Universal_Studios_Japan"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Universal Studios Japan (USJ)</strong></p>
+<p>Công viên giải trí lớn ở Osaka, mở năm 2001. Nổi bật:</p>
+<ul>
+<li><strong>Super Nintendo World:</strong> bước vào thế giới Mario, đeo vòng tay “Power-Up Band” để thu xu; trò Mario Kart dùng kính thực tế tăng cường. Khu Donkey Kong mở thêm năm 2024.</li>
+<li><strong>The Wizarding World of Harry Potter:</strong> lâu đài Hogwarts, làng Hogsmeade, bia bơ, đũa phép tương tác.</li>
+<li><strong>Minion Park, Jurassic Park (tàu lượn The Flying Dinosaur), Hollywood Dream.</strong></li>
+</ul>
+<p><em>Mở cửa:</em> thường khoảng 8:30/9:00–20:00/21:00, thay đổi theo ngày · <em>Nên dành:</em> cả ngày · <em>Lưu ý:</em> vào Super Nintendo World cần vé giờ (lấy trên app ngay khi vào cổng) hoặc Express Pass có kèm giờ vào.</p>
+</div></div><!--/place-->
+</div><h4 id="chụp-hình-nhanh-6">Chụp hình nhanh</h4>
+<ul>
+<li><strong>Quả cầu Universal</strong> trước cổng: chụp lúc mới đến, trước khi đông.</li>
+<li><strong>Ống nước xanh</strong> ở lối vào Super Nintendo World.</li>
+<li><strong>Lâu đài Hogwarts</strong> và phố tuyết Hogsmeade.</li>
+</ul>
+<h3 id="ngày-8-thứ-7-56-nara-và-osaka">Ngày 8 — Thứ 7, 5/6: Nara và Osaka</h3>
+<div class="tblwrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Giờ</th>
+<th>Hoạt động</th>
+<th>Chi phí (4 người)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:45</td>
+<td><strong>Gửi vali đi khách sạn Shinagawa</strong> (đến nơi ngày mai). Giữ 1 túi nhỏ cho đêm nay</td>
+<td>¥8,000–12,000 ($53–80)</td>
+</tr>
+<tr class="even">
+<td>8:00</td>
+<td>Kintetsu Osaka-Namba → Kintetsu Nara (khoảng 40 phút)</td>
+<td>¥2,700 ($18)</td>
+</tr>
+<tr class="odd">
+<td>9:00</td>
+<td><strong>Công viên Nara</strong>, cho hươu ăn bánh senbei</td>
+<td>¥800 ($5)</td>
+</tr>
+<tr class="even">
+<td>9:30</td>
+<td>Chùa <strong>Todai-ji</strong></td>
+<td>¥3,200 ($21)</td>
+</tr>
+<tr class="odd">
+<td>11:00</td>
+<td><strong class="opt">Tuỳ chọn</strong> Đền <strong>Kasuga Taisha</strong></td>
+<td>miễn phí (khu trong ¥2,800 ($19))</td>
+</tr>
+<tr class="even">
+<td>12:30</td>
+<td>Ăn trưa: sushi lá hồng kakinoha, bánh mochi <strong>Nakatanidou</strong></td>
+<td>¥7,000 ($47)</td>
+</tr>
+<tr class="odd">
+<td>14:00</td>
+<td>Tàu về Namba, nghỉ ở khách sạn</td>
+<td>¥2,700 ($18)</td>
+</tr>
+<tr class="even">
+<td>16:30</td>
+<td><strong class="opt">Tuỳ chọn</strong> <strong>Shinsekai</strong>: tháp Tsutenkaku, xiên chiên kushikatsu ở <strong>Daruma</strong></td>
+<td>¥8,000–10,000 ($53–67)</td>
+</tr>
+<tr class="odd">
+<td>19:00</td>
+<td><strong>Dotonbori</strong>: biển Glico, takoyaki, okonomiyaki <strong>Mizuno</strong></td>
+<td>¥8,000 ($53)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Nếu mệt: bỏ Shinsekai, ăn kushikatsu Daruma ngay chi nhánh ở Dotonbori.</p>
+<h4 id="giới-thiệu-địa-điểm-7">Giới thiệu địa điểm</h4>
+<div class="places"><div class="place" data-wiki="Nara_Park"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Công viên Nara</strong> (奈良公園)</p>
+<p>Công viên rộng khoảng 500 ha ở cố đô Nara (thủ đô Nhật thế kỷ 8). Khoảng 1.200 con hươu sống tự do, được coi là sứ giả của thần và là “báu vật thiên nhiên quốc gia”. Hươu đã quen cúi đầu chào để xin bánh senbei.</p>
+<p><em>Mở cửa:</em> cả ngày · <em>Nên dành:</em> 30–45 phút · <em>Lưu ý:</em> hươu đói có thể húc hoặc cắn nhẹ; không trêu bánh, cho ăn xong giơ hai tay trống ra.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Tōdai-ji"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Chùa Todai-ji</strong> (東大寺)</p>
+<p>Di sản UNESCO, xây năm 752. Điện Phật lớn (Daibutsuden) từng là công trình gỗ lớn nhất thế giới, bên trong có <strong>tượng Phật đồng cao khoảng 15 m</strong>. Trong điện có cây cột với một lỗ nhỏ bằng lỗ mũi của tượng; tin rằng chui qua được sẽ được giác ngộ.</p>
+<p><em>Mở cửa:</em> khoảng 7:30–17:30 · <em>Nên dành:</em> 1 giờ.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Kasuga-taisha"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Đền Kasuga Taisha</strong> (春日大社)</p>
+<p>Đền Thần đạo lập năm 768, nổi tiếng với khoảng <strong>3.000 lồng đèn</strong> đá và đồng dọc lối đi và treo quanh đền. Lối vào đi xuyên rừng cổ thụ, rất mát và yên tĩnh.</p>
+<p><em>Mở cửa:</em> khoảng 6:30–17:30 · <em>Nên dành:</em> 45 phút.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Dōtonbori"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Dotonbori</strong> (道頓堀)</p>
+<p>Con kênh và khu ăn uống sầm uất nhất Osaka, nơi khai sinh câu “kuidaore” (ăn đến phá sản). Dọc kênh là biển hiệu khổng lồ: anh chạy bộ Glico, con cua máy Kani Doraku, bạch tuộc, cá nóc. Nên thử takoyaki, okonomiyaki và xiên chiên kushikatsu.</p>
+<p><em>Nên dành:</em> 2 giờ · <em>Lưu ý:</em> buổi tối cuối tuần rất đông; giữ đồ cẩn thận.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Tsūtenkaku"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Shinsekai và tháp Tsutenkaku</strong> (新世界・通天閣)</p>
+<p>Khu phố “Thế giới mới” xây năm 1912, mang không khí Osaka thời Showa với biển đèn sặc sỡ. Tháp Tsutenkaku cao 103 m là biểu tượng của khu này. Đây là nơi ra đời món kushikatsu; quy tắc ở đây: không chấm nước sốt hai lần.</p>
+<p><em>Nên dành:</em> 1–1,5 giờ.</p>
+</div></div><!--/place-->
+</div><h4 id="chụp-hình-nhanh-7">Chụp hình nhanh</h4>
+<ul>
+<li><strong>Hươu cúi chào:</strong> cầm bánh, cúi đầu trước, hươu sẽ cúi lại.</li>
+<li><strong>Cổng Nandaimon</strong> và điện Phật lớn Todai-ji, chụp từ giữa sân.</li>
+<li><strong>Nakatanidou giã mochi siêu tốc:</strong> quay video, nhiều lần trong ngày.</li>
+<li><strong>Biển Glico</strong> nhìn từ cầu Ebisu, lúc lên đèn.</li>
+<li><strong>Tháp Tsutenkaku</strong> với biển đèn Shinsekai.</li>
+</ul>
+<h3 id="ngày-9-chủ-nhật-66-lâu-đài-himeji-tokyo">Ngày 9 — Chủ nhật, 6/6: Lâu đài Himeji → Tokyo</h3>
+<div class="tblwrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Giờ</th>
+<th>Hoạt động</th>
+<th>Chi phí (4 người)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7:30</td>
+<td>Trả phòng (chỉ balo), ăn sáng nhanh</td>
+<td>¥3,000 ($20)</td>
+</tr>
+<tr class="even">
+<td>7:45</td>
+<td>Midosuji Namba → Umeda (10 phút), JR Special Rapid ga Osaka → Himeji (khoảng 60 phút)</td>
+<td>¥6,100 ($41)</td>
+</tr>
+<tr class="odd">
+<td>9:15</td>
+<td>Đi bộ đến lâu đài theo đại lộ Otemae (15–20 phút)</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>9:30</td>
+<td><strong>Lâu đài Himeji</strong> (1,5–2 giờ). Người lớn ¥2,500, dưới 18 tuổi miễn phí</td>
+<td>¥7,500 ($50)</td>
+</tr>
+<tr class="odd">
+<td>11:30</td>
+<td><strong class="opt">Tuỳ chọn</strong> Vườn <strong>Koko-en</strong> cạnh lâu đài</td>
+<td>¥1,200 ($8)</td>
+</tr>
+<tr class="even">
+<td>12:15</td>
+<td>Ăn trưa gần ga Himeji: cơm lươn biển anago hoặc oden Himeji</td>
+<td>¥8,000 ($53)</td>
+</tr>
+<tr class="odd">
+<td>13:30</td>
+<td><strong>Shinkansen Nozomi</strong> Himeji → Shinagawa (khoảng 2 giờ 40). <strong>Ghế E</strong>. Mua ekiben ăn trên tàu</td>
+<td>¥66,000 ($440) + ekiben ¥6,000 ($40)</td>
+</tr>
+<tr class="even">
+<td>16:15</td>
+<td>Nhận phòng khách sạn Shinagawa (vali đã đến), nghỉ</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>18:30</td>
+<td>Ăn tối nhẹ quanh ga Shinagawa</td>
+<td>¥6,000–10,000 ($40–67)</td>
+</tr>
+<tr class="even">
+<td>20:30</td>
+<td><strong>Xem dự báo thời tiết khu Phú Sĩ cho ngày mai</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="giới-thiệu-địa-điểm-8">Giới thiệu địa điểm</h4>
+<div class="places"><div class="place" data-wiki="Himeji_Castle"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Lâu đài Himeji</strong> (姫路城, “Lâu đài Hạc Trắng”)</p>
+<p>Lâu đài gốc đẹp và nguyên vẹn nhất Nhật Bản, di sản UNESCO đầu tiên của Nhật (1993). Tháp chính 6 tầng hoàn thành năm 1609, tường trắng như cánh hạc. Lâu đài chưa từng bị phá hủy, kể cả khi thành phố bị ném bom năm 1945. Bên trong là cấu trúc gỗ nguyên bản, cầu thang dốc, cửa sổ bắn tên và lỗ đổ đá.</p>
+<p><em>Mở cửa:</em> khoảng 9:00–17:00 · <em>Nên dành:</em> 1,5–2 giờ · <em>Lưu ý:</em> cởi giày khi vào tháp chính; mang tất; cầu thang rất dốc.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Kōko-en"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Vườn Koko-en</strong> (好古園)</p>
+<p>Quần thể 9 khu vườn Nhật nhỏ, xây năm 1992 trên nền dinh thự samurai cũ, ngay cạnh lâu đài. Có hồ cá koi, thác nước, vườn trúc và quán trà. Nhìn thấy lâu đài ở phía sau.</p>
+<p><em>Mở cửa:</em> khoảng 9:00–17:00 · <em>Nên dành:</em> 30–45 phút.</p>
+</div></div><!--/place-->
+</div><h4 id="chụp-hình-nhanh-8">Chụp hình nhanh</h4>
+<ul>
+<li><strong>Đại lộ Otemae:</strong> ra cửa Bắc ga Himeji, lâu đài trắng nằm ở cuối đường.</li>
+<li><strong>Quảng trường Sannomaru:</strong> toàn cảnh lâu đài, góc ảnh kinh điển nhất.</li>
+<li><strong>Từ tầng trên cùng tháp chính:</strong> nhìn xuống thành phố và các mái ngói.</li>
+<li><strong>Từ cửa sổ Shinkansen</strong> (ghế E): núi Phú Sĩ, cũng là cách kiểm tra trời trước ngày mai.</li>
+</ul>
+<h3 id="ngày-10-thứ-2-76-núi-phú-sĩ-đi-về-trong-ngày">Ngày 10 — Thứ 2, 7/6: Núi Phú Sĩ đi về trong ngày</h3>
+<p><em>Ngày này có thể đổi với ngày 3 (31/5). Xem phần “Cách quyết định” bên dưới.</em></p>
+<p><strong>Cách quyết định:</strong></p>
+<ol type="1">
+<li><strong>Tối hôm trước:</strong> xem dự báo trên tenki.jp cho khu Fujikawaguchiko. Dự báo nắng hoặc ít mây buổi sáng → đi Phú Sĩ.</li>
+<li><strong>Sáng 6:00:</strong> xem webcam trực tiếp quay núi (tìm “Mt Fuji live camera Kawaguchiko” hoặc “Chureito live camera”).
+<ul>
+<li><strong>Thấy núi</strong> → <strong>phương án chính: hồ Kawaguchi</strong>.</li>
+<li><strong>Mây che, không mưa to</strong> → <strong>dự phòng 1: Kamakura</strong>. Huỷ vé Fuji Excursion ở quầy JR trước giờ tàu chạy, chỉ mất phí nhỏ.</li>
+<li><strong>Mưa to</strong> → <strong>dự phòng 2: Tokyo trong nhà</strong>.</li>
+</ul></li>
+<li><strong>Hết vé tàu Fuji Excursion:</strong> đi xe buýt cao tốc từ Busta Shinjuku đến Kawaguchiko (khoảng 2 giờ).</li>
+</ol>
+<h4 id="phương-án-chính-hồ-kawaguchi">Phương án chính: Hồ Kawaguchi</h4>
+<div class="tblwrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Giờ</th>
+<th>Hoạt động</th>
+<th>Chi phí (4 người)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>6:00</td>
+<td>Dậy, xem webcam, quyết định</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>6:45</td>
+<td>JR Shinagawa → Shinjuku (khoảng 20 phút), mua đồ ăn sáng ở ga</td>
+<td>¥3,000 ($20)</td>
+</tr>
+<tr class="odd">
+<td>7:30</td>
+<td><strong>Fuji Excursion</strong> Shinjuku → Kawaguchiko, chuyến sớm nhất (khoảng 1 giờ 55; kiểm tra giờ khi đặt)</td>
+<td>¥16,500 ($110)</td>
+</tr>
+<tr class="even">
+<td>9:30</td>
+<td>Tàu Fujikyu đến ga Shimoyoshida (khoảng 15 phút), <strong>taxi 5 phút đến đền Arakura Sengen</strong>, đi <strong>đường dốc</strong> lên <strong>chùa Chureito</strong> (thay cho khoảng 400 bậc thang)</td>
+<td>¥2,400 ($16) tàu + taxi ¥1,500 ($10)</td>
+</tr>
+<tr class="odd">
+<td>11:00</td>
+<td><strong>Phố Honcho</strong> (Fujiyoshida): phố cũ có núi Phú Sĩ ở cuối đường</td>
+<td>miễn phí</td>
+</tr>
+<tr class="even">
+<td>12:00</td>
+<td>Ăn trưa: mì <strong>hoto</strong> ở <strong>Hoto Fudo</strong></td>
+<td>¥6,000–8,000 ($40–53)</td>
+</tr>
+<tr class="odd">
+<td>13:30</td>
+<td>Xe buýt dạo hồ đến <strong>công viên Oishi</strong> (bờ bắc, nhìn thẳng núi)</td>
+<td>¥6,000–8,000 ($40–53)</td>
+</tr>
+<tr class="even">
+<td>14:45</td>
+<td><strong class="opt">Tuỳ chọn, chỉ khi trời quang</strong> Cáp treo Kachi Kachi</td>
+<td>¥4,000 ($27)</td>
+</tr>
+<tr class="odd">
+<td>16:30</td>
+<td><strong>Fuji Excursion</strong> Kawaguchiko → Shinjuku (kiểm tra giờ chuyến chiều khi đặt)</td>
+<td>¥16,500 ($110)</td>
+</tr>
+<tr class="even">
+<td>19:00</td>
+<td><strong>Bữa tối chia tay:</strong> sushi omakase ở Ginza (đặt trước, giờ muộn) hoặc <strong>Sushi no Midori</strong></td>
+<td>¥12,000–60,000 ($80–400)</td>
+</tr>
+<tr class="odd">
+<td>21:00</td>
+<td><strong>Xếp vali</strong>, ngủ sớm</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>Lưu ý: ngày này đi tàu khoảng 4 giờ khứ hồi. Xe riêng có tài xế thoải mái hơn nhưng đắt (khoảng ¥80,000–120,000 ($533–800) cho cả nhóm).</p>
+<h4 id="giới-thiệu-địa-điểm-9">Giới thiệu địa điểm</h4>
+<div class="places"><div class="place" data-wiki="Mount_Fuji"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Núi Phú Sĩ</strong> (富士山)</p>
+<p>Núi cao nhất Nhật Bản, 3.776 m, là núi lửa còn hoạt động (lần phun gần nhất năm 1707). Di sản văn hóa UNESCO từ 2013, biểu tượng thiêng liêng trong tín ngưỡng và nghệ thuật Nhật. Khu Ngũ Hồ (Fuji Five Lakes) ở chân núi phía bắc là nơi ngắm núi đẹp nhất.</p>
+<p><em>Lưu ý:</em> tháng 6 núi hay bị mây che; sáng sớm là lúc rõ nhất.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Chureito_Pagoda"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Chùa Chureito</strong> (忠霊塔, đền Arakura Sengen)</p>
+<p>Tháp 5 tầng màu đỏ trên sườn núi Arakura, xây năm 1963 để tưởng niệm người dân Fujiyoshida mất trong chiến tranh. Góc nhìn tháp đỏ phía trước, núi Phú Sĩ phía sau là một trong những hình ảnh nổi tiếng nhất của Nhật Bản.</p>
+<p><em>Mở cửa:</em> cả ngày · <em>Nên dành:</em> 1–1,5 giờ · <em>Vào cửa:</em> miễn phí · <em>Cách lên nhẹ nhất:</em> taxi đến đền, rồi đi đường dốc zigzag (15–20 phút) thay vì 398 bậc thang; đài quan sát ở phía trên tháp.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Lake_Kawaguchi"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Hồ Kawaguchi và công viên Oishi</strong> (河口湖・大石公園)</p>
+<p>Hồ dễ đến nhất trong Ngũ Hồ Phú Sĩ. Bờ bắc (công viên Oishi) nhìn thẳng sang núi qua mặt hồ; ngày lặng gió núi in bóng xuống nước. Đầu tháng 6 vườn hoa ở Oishi bắt đầu mùa oải hương.</p>
+<p><em>Nên dành:</em> 1 giờ · <em>Đi lại:</em> xe buýt dạo hồ (Retro bus) từ ga Kawaguchiko.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Fujiyoshida,_Yamanashi"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Phố Honcho, Fujiyoshida</strong> (本町通り)</p>
+<p>Con phố thương mại cũ của thành phố Fujiyoshida, nổi tiếng trên mạng xã hội vì núi Phú Sĩ hiện ra to lớn ngay cuối đường. Cách ga Shimoyoshida khoảng 10 phút đi bộ.</p>
+<p><em>Nên dành:</em> 15–20 phút · <em>Lưu ý:</em> đây là đường xe chạy; chụp từ vỉa hè hoặc vạch qua đường khi đèn xanh, không đứng giữa lòng đường.</p>
+</div></div><!--/place-->
+</div><h4 id="dự-phòng-1-trời-mây-không-mưa-to-kamakura">Dự phòng 1 (trời mây, không mưa to): Kamakura</h4>
+<p>Đầu tháng 6 là <strong>mùa hoa cẩm tú cầu (ajisai)</strong> ở Kamakura. Trời mây vẫn đẹp, mưa phùn hoa còn đẹp hơn.</p>
+<div class="tblwrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Giờ</th>
+<th>Hoạt động</th>
+<th>Chi phí (4 người)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>8:30</td>
+<td>JR Yokosuka line Shinagawa → Kita-Kamakura (khoảng 45 phút, không đổi tàu)</td>
+<td>¥3,300 ($22)</td>
+</tr>
+<tr class="even">
+<td>9:15</td>
+<td>Chùa <strong>Meigetsu-in</strong> (“chùa cẩm tú cầu”, mùa hoa đông, đến sớm)</td>
+<td>¥2,000 ($13)</td>
+</tr>
+<tr class="odd">
+<td>10:30</td>
+<td>Đi bộ hoặc tàu 1 ga đến Kamakura, phố <strong>Komachi-dori</strong>, đền <strong>Tsurugaoka Hachimangu</strong></td>
+<td>miễn phí</td>
+</tr>
+<tr class="even">
+<td>12:00</td>
+<td>Ăn trưa: cơm cá cơm trắng <strong>shirasu-don</strong></td>
+<td>¥8,000 ($53)</td>
+</tr>
+<tr class="odd">
+<td>13:30</td>
+<td>Tàu Enoden đến Hase, <strong>tượng Đại Phật Kamakura</strong></td>
+<td>¥2,000 ($13)</td>
+</tr>
+<tr class="even">
+<td>14:30</td>
+<td><strong class="opt">Tuỳ chọn</strong> Chùa <strong>Hase-dera</strong> (mùa hoa có thể phải lấy vé giờ)</td>
+<td>¥2,000–4,000 ($13–27)</td>
+</tr>
+<tr class="odd">
+<td>16:00</td>
+<td><strong class="opt">Tuỳ chọn</strong> Tàu Enoden đến ga Kamakurakokomae, đường ray sát biển</td>
+<td>¥1,000 ($7)</td>
+</tr>
+<tr class="even">
+<td>17:00</td>
+<td>JR về Shinagawa (khoảng 50 phút)</td>
+<td>¥3,300 ($22)</td>
+</tr>
+<tr class="odd">
+<td>19:00</td>
+<td><strong>Bữa tối chia tay</strong> ở Ginza hoặc Shinagawa, rồi xếp vali</td>
+<td>¥12,000–60,000 ($80–400)</td>
+</tr>
+</tbody>
+</table></div>
+<div class="places"><div class="place" data-wiki="Meigetsu-in"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Chùa Meigetsu-in</strong> (明月院)</p>
+<p>Được gọi là “chùa cẩm tú cầu”: khoảng 2.500 khóm hoa màu xanh dương nở dọc lối đi vào tháng 6, màu xanh này còn có tên riêng “Meigetsu-in blue”. Trong chùa có cửa sổ tròn nhìn ra vườn, chỉ được chụp từ bên ngoài.</p>
+<p><em>Mở cửa:</em> khoảng 9:00–16:00 (mùa hoa mở sớm hơn) · <em>Nên dành:</em> 45–60 phút · <em>Lưu ý:</em> mùa hoa rất đông, đến lúc mở cửa.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Tsurugaoka_Hachimangū"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Đền Tsurugaoka Hachimangu</strong> (鶴岡八幡宮)</p>
+<p>Đền Thần đạo quan trọng nhất Kamakura, gắn với dòng họ Minamoto, những người lập chế độ tướng quân đầu tiên (1192). Đường dẫn vào đền đi qua phố mua sắm Komachi-dori với nhiều quán ăn vặt.</p>
+<p><em>Mở cửa:</em> khoảng 6:00–20:30 · <em>Nên dành:</em> 45 phút · <em>Vào cửa:</em> miễn phí.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Kōtoku-in"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Tượng Đại Phật Kamakura</strong> (鎌倉大仏, chùa Kotoku-in)</p>
+<p>Tượng Phật A Di Đà bằng đồng cao 11,3 m, đúc năm 1252. Ban đầu tượng nằm trong điện gỗ, nhưng điện bị sóng thần cuốn trôi năm 1498; từ đó tượng ngồi ngoài trời. Có thể vào bên trong lòng tượng với phí nhỏ.</p>
+<p><em>Mở cửa:</em> khoảng 8:00–17:30 · <em>Nên dành:</em> 30 phút.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Hase-dera_(Kamakura)"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Chùa Hase-dera</strong> (長谷寺)</p>
+<p>Chùa trên sườn đồi thờ tượng Quan Âm 11 mặt bằng gỗ cao khoảng 9 m. Tháng 6 có “con đường cẩm tú cầu” trên đồi nhìn ra vịnh Sagami.</p>
+<p><em>Mở cửa:</em> khoảng 8:00–17:00 · <em>Nên dành:</em> 45–60 phút · <em>Lưu ý:</em> mùa hoa đường lên đồi có thể phải lấy vé giờ.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Enoshima_Electric_Railway"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Tàu điện Enoden</strong> (江ノ電)</p>
+<p>Tuyến tàu điện cổ nhỏ chạy từ Kamakura ra đảo Enoshima, có đoạn chạy sát bờ biển và len giữa nhà dân. Ga Kamakurakokomae nổi tiếng vì xuất hiện trong anime <em>Slam Dunk</em>.</p>
+<p><em>Lưu ý:</em> đứng trên vỉa hè khi chụp, không ra đường ray.</p>
+</div></div><!--/place-->
+</div><h4 id="dự-phòng-2-mưa-to-tokyo-trong-nhà">Dự phòng 2 (mưa to): Tokyo trong nhà</h4>
+<div class="tblwrap"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Giờ</th>
+<th>Hoạt động</th>
+<th>Chi phí (4 người)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>9:30</td>
+<td>Tàu đến <strong>Odaiba</strong> (khoảng 30 phút)</td>
+<td>Suica</td>
+</tr>
+<tr class="even">
+<td>10:00</td>
+<td><strong>Tượng Gundam khổng lồ</strong> trước DiverCity Tokyo Plaza, cửa hàng Gundam Base</td>
+<td>miễn phí</td>
+</tr>
+<tr class="odd">
+<td>11:00</td>
+<td><strong class="opt">Tuỳ chọn</strong> Bảo tàng <strong>Miraikan</strong> (mở thứ 2)</td>
+<td>¥2,500 ($17)</td>
+</tr>
+<tr class="even">
+<td>13:00</td>
+<td>Ăn trưa trong DiverCity hoặc Aqua City</td>
+<td>¥8,000 ($53)</td>
+</tr>
+<tr class="odd">
+<td>14:30</td>
+<td><strong>Ginza</strong>: Itoya, Uniqlo Ginza, tầng hầm thực phẩm <strong>Mitsukoshi</strong> mua quà</td>
+<td>tùy mua sắm</td>
+</tr>
+<tr class="even">
+<td>17:30</td>
+<td>Về khách sạn, xếp vali</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>19:00</td>
+<td><strong>Bữa tối chia tay</strong> ở Ginza</td>
+<td>¥12,000–60,000 ($80–400)</td>
+</tr>
+</tbody>
+</table></div>
+<div class="places"><div class="place" data-wiki="DiverCity_Tokyo_Plaza"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Odaiba và tượng Gundam</strong> (お台場)</p>
+<p>Đảo nhân tạo bên vịnh Tokyo, khu giải trí và mua sắm lớn. Trước trung tâm thương mại DiverCity là <strong>tượng robot Unicorn Gundam cao 19,7 m</strong>, kích thước thật như trong phim. Buổi tối tượng biến hình và phát sáng theo giờ.</p>
+<p><em>Nên dành:</em> 1–2 giờ.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Miraikan"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Bảo tàng Miraikan</strong> (日本科学未来館)</p>
+<p>Bảo tàng Khoa học và Đổi mới Quốc gia, trưng bày robot, khám phá vũ trụ và công nghệ tương lai. Nổi bật là quả địa cầu lớn “Geo-Cosmos” phủ màn hình OLED treo giữa sảnh.</p>
+<p><em>Mở cửa:</em> khoảng 10:00–17:00, <strong>đóng cửa thứ 3</strong> · <em>Nên dành:</em> 2 giờ.</p>
+</div></div><!--/place-->
+<div class="place" data-wiki="Ginza"><div class="ph"><div class="ph-empty">Đang tải ảnh…</div></div><div class="tx">
+<p><strong>Ginza</strong> (銀座)</p>
+<p>Khu mua sắm sang trọng nhất Tokyo. Itoya là cửa hàng văn phòng phẩm 12 tầng; Uniqlo Ginza là cửa hàng lớn của hãng; tầng hầm thực phẩm (depachika) của Mitsukoshi bán bánh kẹo, đồ khô làm quà rất đẹp.</p>
+<p><em>Nên dành:</em> 2–3 giờ.</p>
+</div></div><!--/place-->
+</div><h3 id="ngày-bay-thứ-3-86-bay-1030-từ-hnd">Ngày bay — Thứ 3, 8/6 (bay 10:30 từ HND)</h3>
+<p>6:00 dậy, trả phòng. 6:45 tàu Keikyu Shinagawa → Haneda Terminal 3 (khoảng 15 phút, ¥1,300 ($9) cho 4 người). 7:30 có mặt ở sân bay, đủ 3 giờ trước chuyến quốc tế. Ăn sáng và mua quà ở Terminal 3 sau khi qua an ninh. Dự phòng: taxi Shinagawa → HND khoảng 20 phút.</p>
+<h2 id="ngân-sách-ước-tính-cho-4-người">Ngân sách ước tính cho 4 người</h2>
+<p>Tổng khoảng <strong>¥1,046,000–1,460,000 ($6,970–9,730)</strong>, chưa gồm vé máy bay, phí đổi vé, mua sắm và USJ Express Pass. Tính theo phương án chính ngày Phú Sĩ; hai phương án dự phòng rẻ hơn khoảng ¥20,000–30,000 ($133–200).</p>
+<div class="tblwrap"><table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Hạng mục</th>
+<th>Thấp</th>
+<th>Cao</th>
+<th>Ghi chú</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Khách sạn (10 đêm)</td>
+<td>¥425,000 ($2,830)</td>
+<td>¥665,000 ($4,430)</td>
+<td>Shinagawa 2 đêm</td>
+</tr>
+<tr class="even">
+<td>Ăn uống</td>
+<td>¥270,000 ($1,800)</td>
+<td>¥425,000 ($2,830)</td>
+<td>¥25,000–40,000 ($167–267)/ngày</td>
+</tr>
+<tr class="odd">
+<td>Đi lại</td>
+<td>¥261,000 ($1,740)</td>
+<td>¥274,000 ($1,830)</td>
+<td>Shinkansen, Fuji Excursion, xe buýt, Suica, taxi, gửi vali</td>
+</tr>
+<tr class="even">
+<td>Vé tham quan</td>
+<td>¥90,000 ($600)</td>
+<td>¥96,000 ($640)</td>
+<td>USJ chiếm gần một nửa</td>
+</tr>
+<tr class="odd">
+<td><strong>Tổng</strong></td>
+<td><strong>¥1,046,000 ($6,970)</strong></td>
+<td><strong>¥1,460,000 ($9,730)</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>USJ Express Pass (tuỳ chọn)</td>
+<td>¥60,000 ($400)</td>
+<td>¥120,000 ($800)</td>
+<td>4 người</td>
+</tr>
+</tbody>
+</table></div>
+<p>Giá tham khảo: Nozomi Tokyo–Kyoto ¥14,170 ($94)/người (<a target="_blank" rel="noopener" href="https://selfguidejapan.com/blog/tokyo-to-kyoto">nguồn</a>); Fuji Excursion ¥4,130 ($28)/người/chiều (<a target="_blank" rel="noopener" href="https://shinkansentickets.net/guide/fuji-excursion-shinjuku-kawaguchiko">nguồn</a>); teamLab Planets từ ¥3,600 ($24) người lớn, ¥2,800 ($19) tuổi 13–17 (<a target="_blank" rel="noopener" href="https://www.artvisitguide.com/teamlab-planets-vs-borderless-tokyo/">nguồn</a>); USJ giá theo ngày, thấp nhất ¥8,400 ($56) (<a target="_blank" rel="noopener" href="https://wdwnt.com/2026/06/studio-pass-pricing-updated-at-universal-studios-japan-making-early-purchases-more-affordable/">nguồn</a>); Limousine Bus Haneda–Shinjuku ¥1,400 ($9) (<a target="_blank" rel="noopener" href="https://jas2026.umin.jp/en/access.html">nguồn</a>); lâu đài Himeji ¥2,500 người lớn, dưới 18 miễn phí (<a target="_blank" rel="noopener" href="https://jref.com/threads/admission-to-himeji-castle-to-increase-for-nonresidents.675192/">nguồn</a>). Giá Shinkansen Himeji–Shinagawa, vé Kamakura và Miraikan là ước tính, chưa kiểm tra.</p>
+<h2 id="mẹo-thực-tế">Mẹo thực tế</h2>
+<ul>
+<li><strong>Tiền mặt:</strong> mang khoảng ¥30,000–50,000 ($200–333). Quán nhỏ, đền chùa, chợ hay chỉ nhận tiền mặt. Rút ở ATM 7-Eleven. Khi quẹt thẻ, chọn trả bằng yên.</li>
+<li><strong>Lệch múi giờ:</strong> Houston–Tokyo lệch 14 giờ. Ngày 1 ăn tối nhẹ, ngủ sớm. Mấy ngày đầu sẽ tự dậy sớm, tận dụng để đi chỗ đông lúc vắng.</li>
+<li><strong>Hàng chờ quán nổi tiếng:</strong> đến trước giờ mở cửa 15–20 phút hoặc sau 14:00.</li>
+<li><strong>Đền chùa:</strong> đền Thần đạo có cổng torii, chùa Phật giáo có tượng Phật và hương. Rửa tay ở bể nước trước khi vào; không chụp ảnh bên trong chính điện nếu có biển cấm.</li>
+<li><strong>Lâu đài Himeji:</strong> mặc giày dễ cởi, mang tất; cầu thang rất dốc.</li>
+<li><strong>Mưa:</strong> ô gấp và giày khô nhanh. Mưa lớn ngày Kyoto thì đổi Arashiyama sang Nishiki + Kyoto Railway Museum.</li>
+<li><strong>Giày:</strong> mỗi ngày đi bộ 15,000–20,000 bước.</li>
+<li><strong>Rác:</strong> ít thùng rác công cộng, mang túi nhỏ đựng rác về khách sạn.</li>
+<li><strong>Miễn thuế:</strong> mang hộ chiếu khi mua sắm trên ¥5,000 ($33) ở cửa hàng lớn.</li>
+<li><strong>Internet:</strong> eSIM Nhật (Ubigi, Airalo) hoặc gói quốc tế của nhà mạng Mỹ.</li>
+<li><strong>Vali cỡ lớn trên Shinkansen:</strong> vali tổng 3 chiều từ 160 cm phải đặt ghế có chỗ để hành lý lớn. Phương án này gửi vali bằng takkyubin nên không bị ảnh hưởng.</li>
+</ul>
+<p><em>Ảnh trong bản HTML lấy từ Wikipedia/Wikimedia Commons (giấy phép tự do), hiển thị khi mở bằng trình duyệt có kết nối mạng.</em></p>
+</main>
+<footer>Ảnh lấy tự động từ Wikipedia/Wikimedia Commons khi mở trang (cần kết nối mạng). Giá là ước tính, quy đổi ¥150 = $1.</footer>
+<script>
+(function(){
+  const W='https://en.wikipedia.org/w/api.php';
+  async function lookup(title, alt){
+    const tries=[{titles:title,redirects:1},{generator:'search',gsrsearch:alt,gsrlimit:1}];
+    for(const t of tries){
+      const p=new URLSearchParams(Object.assign({action:'query',format:'json',origin:'*',prop:'pageimages|info',inprop:'url',piprop:'thumbnail|name',pithumbsize:'900'},t));
+      try{
+        const r=await fetch(W+'?'+p); const j=await r.json();
+        const pages=j.query&&j.query.pages; if(!pages) continue;
+        for(const k in pages){const pg=pages[k]; if(pg.thumbnail) return {src:pg.thumbnail.source,url:pg.fullurl,file:pg.pageimage};}
+      }catch(e){}
+    }
+    return null;
+  }
+  document.querySelectorAll('.place').forEach(async el=>{
+    const title=el.dataset.wiki; const name=(el.querySelector('strong')||{}).textContent||title;
+    const ph=el.querySelector('.ph');
+    const res=await lookup(title.replace(/_/g,' '), name.replace(/\(.*?\)/g,'')+' Japan');
+    if(res){
+      ph.innerHTML='';
+      const img=document.createElement('img'); img.loading='lazy'; img.alt=name; img.src=res.src; ph.appendChild(img);
+      const a=document.createElement('a'); a.className='cr'; a.href=res.file?('https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(res.file)):res.url; a.target='_blank'; a.rel='noopener'; a.textContent='Ảnh: Wikimedia'; ph.appendChild(a);
+    } else {
+      ph.querySelector('.ph-empty').innerHTML='<a target="_blank" rel="noopener" href="https://www.google.com/search?tbm=isch&q='+encodeURIComponent(name+' Japan')+'">Xem ảnh</a>';
+    }
+  });
+})();
+</script>
+</body></html>
